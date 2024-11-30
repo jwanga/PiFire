@@ -52,7 +52,7 @@ class Display(DisplayBase):
 		if self.real_hardware:
 			# Use the rpi-backlight module if running on the RasPi
 			from rpi_backlight import Backlight
-			self.backlight = Backlight()
+			self.backlight = DummyBacklight()
 		else: 
 			# Else use a fake module class for backlight
 			self.backlight = DummyBacklight()
