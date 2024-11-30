@@ -2041,7 +2041,7 @@
 				"default" : false,
 				"image" : "dsi_touch.png",
 				"reboot_required" : true,
-				"py_dependencies" : ["rpi-backlight", "pillow>=10.0.0", "pygame>=2.5.0"], 
+				"py_dependencies" : ["git+https://github.com/linusg/rpi-backlight", "pillow>=10.0.0", "pygame>=2.5.0"], 
 				"apt_dependencies" : ["lightdm", "libsdl2-2.0-0"],
 				"command_list" : [["sudo", "python", "board-config.py", "-bl"]],
 				"settings_dependencies" : {
